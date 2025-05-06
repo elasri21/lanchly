@@ -717,16 +717,6 @@ section {
   border: none;
   border-radius: 4px;
 }
-
-.footer-newsletter button {
-  padding: 8px 14px;
-  border: none;
-  background-color: var(--primary-color);
-  color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
 .footer-bottom {
   text-align: center;
   margin-top: 40px;
@@ -734,6 +724,22 @@ section {
   padding-top: 20px;
   color: #aaa;
 }
+.footer-newsletter .submit {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.footer-newsletter .submit:hover {
+  background-color: #019b89;
+}
+
 
 
 #scrollToTop {
