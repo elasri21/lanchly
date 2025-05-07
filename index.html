@@ -25,7 +25,12 @@
   <!-- control how search engines crawl your site -->
   <meta name="robots" content="index, follow">
   <title>Launchly – Startup HTML Template</title>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.png">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/rule.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -42,6 +47,7 @@
         <a href="#">Home</a>
         <a href="#features">Features</a>
         <a href="#pricing">Pricing</a>
+        <a href="#blog">blog</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -49,7 +55,14 @@
 
   <main>
     <!-- Hero Section -->
-    <section class="hero" id="hero">
+    <section class="hero" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="800" id="hero">
+      <!-- to be tested -->
+      <div class="floating-shapes">
+        <span class="shape circle"></span>
+        <span class="shape triangle"></span>
+        <span class="shape square"></span>
+      </div>        
+      <!-- to be tested -->
       <div class="container hero-content">
         <div class="hero-text">
           <h1>Supercharge Your Startup Launch</h1>
@@ -69,7 +82,7 @@
     </section>
 
     <!-- clients section -->
-    <section class="clients" id="clients">
+    <section class="clients" data-aos="fade-in" data-aos-delay="100" data-aos-duration="800" id="clients">
       <div class="container">
         <h2 class="section-title">Our clients</h2>
         <p class="clients-title">Trusted by top companies</p>
@@ -85,7 +98,7 @@
     </section>
 
     <!-- Features Section -->
-    <section class="features" id="features">
+    <section class="features" data-aos="fade-in" data-aos-delay="100" data-aos-duration="800" id="features">
       <div class="container">
         <h2 class="section-title">Powerful Features</h2>
         <p class="section-subtitle">
@@ -94,14 +107,18 @@
 
         <div class="features-grid">
           <div class="feature-box">
-            <img src="./img/icon-speed.svg" alt="Fast Performance">
+            <div class="icon bounce">
+              <img src="./img/icon-speed.svg" alt="Fast Performance">
+            </div>
             <h3>Fast Performance</h3>
             <p>
               Optimized for speed to deliver a lightning-fast user experience.
             </p>
           </div>
           <div class="feature-box">
-            <img src="./img/icon-customize.svg" alt="Easy Customization">
+            <div class="icon bounce">
+              <img src="./img/icon-customize.svg" alt="Easy Customization">
+            </div>
             <h3>Easy Customization</h3>
             <p>
               Edit and deploy your website without touching a single line of
@@ -109,26 +126,45 @@
             </p>
           </div>
           <div class="feature-box">
-            <img src="./img/icon-responsive.svg" alt="Fully Responsive">
+            <div class="icon bounce">
+              <img src="./img/icon-responsive.svg" alt="Fully Responsive">
+            </div>
             <h3>Fully Responsive</h3>
             <p>
               Your site looks great on desktops, tablets, and mobile devices.
             </p>
           </div>
           <div class="feature-box">
-            <img src="./img/icon-secure.svg" alt="Secure by Design">
+            <div class="icon bounce">
+              <img src="./img/icon-secure.svg" alt="Secure by Design">
+            </div>
             <h3>Secure by Design</h3>
             <p>
               Built with best practices to ensure maximum security and
               privacy.
             </p>
           </div>
+          <div class="feature-box">
+            <div class="icon bounce">
+              <img src="./img/seo-icon.svg" alt="SEO Optimized Icon" />
+            </div>
+            <h3>SEO Optimized</h3>
+            <p>Structured and clean code that helps you rank higher on search engines effortlessly.</p>
+          </div>
+          
+          <div class="feature-box">
+            <div class="icon bounce">
+              <img src="./img/upload-icon.svg" alt="Free Updates Icon" />
+            </div>
+            <h3>Free Updates</h3>
+            <p>Get future improvements and features at no extra cost—ensuring your site stays modern.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Pricing Section -->
-    <section class="pricing" id="pricing">
+    <section class="pricing" data-aos="fade-in" data-aos-delay="100" data-aos-duration="800" id="pricing">
       <div class="container">
         <h2 class="section-title">Choose Your Plan</h2>
         <p class="section-subtitle">
@@ -174,81 +210,175 @@
     </section>
 
     <!-- blog section -->
-    <section class="blog" id="blog">
+    <section class="blog" data-aos="fade-in" data-aos-delay="100" data-aos-duration="800" id="blog">
       <div class="container">
         <h2 class="section-title">From the Blog</h2>
         <p class="section-subtitle">Insights, tips, and news to help you grow.</p>
-    
+
         <div class="blog-grid">
-          <article class="blog-post">
+          <!-- Post 1 -->
+          <article class="blog-post" data-aos="fade-up" data-aos-delay="100">
             <img src="img/post-1.png" alt="Post 1">
+            <div class="blog-meta">
+              <span class="author">By Sarah</span> •
+              <span class="date">Apr 24, 2025</span> •
+              <span class="tag">Launch</span>
+            </div>
             <h3>How to Launch a Product People Love</h3>
             <p>Learn the fundamentals of successful launches with actionable tips and real examples.</p>
-            <a href="#" class="read-more">Read More →</a>
+            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </article>
-    
-          <article class="blog-post">
+
+          <!-- Post 2 -->
+          <article class="blog-post" data-aos="fade-up" data-aos-delay="200">
             <img src="img/post-2.png" alt="Post 2">
+            <div class="blog-meta">
+              <span class="author">By Liam</span> •
+              <span class="date">Apr 19, 2025</span> •
+              <span class="tag">Design</span>
+            </div>
             <h3>Design Trends for 2025</h3>
             <p>Stay ahead of the curve with the latest UI/UX trends shaping the future of web design.</p>
-            <a href="#" class="read-more">Read More →</a>
+            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </article>
-    
-          <article class="blog-post">
+
+          <!-- Post 3 -->
+          <article class="blog-post" data-aos="fade-up" data-aos-delay="300">
             <img src="img/post-3.png" alt="Post 3">
+            <div class="blog-meta">
+              <span class="author">By Alex</span> •
+              <span class="date">Apr 11, 2025</span> •
+              <span class="tag">Marketing</span>
+            </div>
             <h3>Boost Conversions with Smart CTAs</h3>
             <p>Discover how strategic calls-to-action can dramatically increase user engagement.</p>
-            <a href="#" class="read-more">Read More →</a>
+            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </article>
+
+          <!-- Post 4 -->
+          <article class="blog-post" data-aos="fade-up" data-aos-delay="400">
+            <img src="img/post-4.png" alt="Post 4">
+            <div class="blog-meta">
+              <span class="author">By Emma</span> •
+              <span class="date">Apr 6, 2025</span> •
+              <span class="tag">Business</span>
+            </div>
+            <h3>Secrets to Scaling Your Online Brand</h3>
+            <p>Explore proven techniques to take your online presence to the next level.</p>
+            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </article>
+
+          <!-- Post 5 -->
+          <article class="blog-post" data-aos="fade-up" data-aos-delay="500">
+            <img src="img/post-5.png" alt="Post 5">
+            <div class="blog-meta">
+              <span class="author">By David</span> •
+              <span class="date">Mar 30, 2025</span> •
+              <span class="tag">Tools</span>
+            </div>
+            <h3>Top Tools Every Startup Needs</h3>
+            <p>A curated list of powerful tools to help startups stay productive and lean.</p>
+            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </article>
+
+          <!-- Post 6 -->
+          <article class="blog-post" data-aos="fade-up" data-aos-delay="600">
+            <img src="img/post-6.png" alt="Post 6">
+            <div class="blog-meta">
+              <span class="author">By Olivia</span> •
+              <span class="date">Mar 24, 2025</span> •
+              <span class="tag">Tips</span>
+            </div>
+            <h3>Quick Wins to Improve Website UX</h3>
+            <p>Small changes can make a big difference — learn how to improve UX quickly.</p>
+            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </article>
         </div>
       </div>
     </section>
-    
 
+    
     <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
+    <section class="testimonials" data-aos="zoom-out" data-aos-delay="100" data-aos-duration="800" id="testimonials">
       <div class="container">
         <h2>What Our Users Say</h2>
-        <div class="testimonial-cards">
-          <article class="testimonial">
-            <div class="avatar">
-              <img src="./img/avatar-1.png" alt="Alex avatar">
-            </div>
-            <div class="stars">★★★★★</div>
-            <p>
-              “Launchly helped me launch my portfolio in days — it’s fast,
-              clean, and beautifully designed.”
-            </p>
-            <h4>— Alex J., Web Developer</h4>
-          </article>
-          <article class="testimonial">
-            <div class="avatar">
-              <img src="./img/avatar-2.png" alt="Maya avatar">
-            </div>
-            <div class="stars">★★★★★</div>
-            <p>
-              “As a freelancer, having a strong online presence is everything.
-              Launchly nails it.”
-            </p>
-            <h4>— Maya P., UX Designer</h4>
-          </article>
-          <article class="testimonial">
-            <div class="avatar">
-              <img src="./img/avatar-3.png" alt="Thomas avatar">
-            </div>
-            <div class="stars">★★★★★</div>
-            <p>
-              “It’s one of the best templates I’ve used. Clear code and great
-              mobile design.”
-            </p>
-            <h4>— Thomas L., Creative Director</h4>
-          </article>
+        <div class="swiper-container">
+          <div class="swiper-wrapper testimonial-cards">
+            <article class="swiper-slide testimonial">
+              <div class="avatar">
+                <img src="./img/avatar-1.png" alt="Alex avatar">
+              </div>
+              <div class="stars">★★★★★</div>
+              <p>
+                “Launchly helped me launch my portfolio in days — it’s fast,
+                clean, and beautifully designed.”
+              </p>
+              <h4>— Alex J., Web Developer</h4>
+            </article>
+            <article class="swiper-slide testimonial">
+              <div class="avatar">
+                <img src="./img/avatar-2.png" alt="Maya avatar">
+              </div>
+              <div class="stars">★★★★★</div>
+              <p>
+                “As a freelancer, having a strong online presence is everything.
+                Launchly nails it.”
+              </p>
+              <h4>— Maya P., UX Designer</h4>
+            </article>
+            <article class="swiper-slide testimonial">
+              <div class="avatar">
+                <img src="./img/avatar-3.png" alt="Thomas avatar">
+              </div>
+              <div class="stars">★★★★★</div>
+              <p>
+                “It’s one of the best templates I’ve used. Clear code and great
+                mobile design.”
+              </p>
+              <h4>— Thomas L., Creative Director</h4>
+            </article>
+            <article class="swiper-slide testimonial">
+              <div class="avatar">
+                <img src="./img/avatar-1.png" alt="Alex avatar">
+              </div>
+              <div class="stars">★★★★★</div>
+              <p>
+                “Launchly helped me launch my portfolio in days — it’s fast,
+                clean, and beautifully designed.”
+              </p>
+              <h4>— Alex J., Web Developer</h4>
+            </article>
+            <article class="swiper-slide testimonial">
+              <div class="avatar">
+                <img src="./img/avatar-2.png" alt="Maya avatar">
+              </div>
+              <div class="stars">★★★★★</div>
+              <p>
+                “As a freelancer, having a strong online presence is everything.
+                Launchly nails it.”
+              </p>
+              <h4>— Maya P., UX Designer</h4>
+            </article>
+            <article class="swiper-slide testimonial">
+              <div class="avatar">
+                <img src="./img/avatar-3.png" alt="Thomas avatar">
+              </div>
+              <div class="stars">★★★★★</div>
+              <p>
+                “It’s one of the best templates I’ve used. Clear code and great
+                mobile design.”
+              </p>
+              <h4>— Thomas L., Creative Director</h4>
+            </article>
+          </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <section class="contact" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800" id="contact">
       <div class="container">
         <h2 class="section-title">Let’s Work Together</h2>
         <p class="section-subtitle">
@@ -272,7 +402,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq" id="faq">
+    <section class="faq" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800" id="faq">
       <div class="container">
         <h2 class="section-title">Frequently Asked Questions</h2>
         <p class="section-subtitle">Got questions? We've got answers.</p>
@@ -377,6 +507,38 @@
 
   <button id="scrollToTop" title="Go to top">↑</button>
 
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
+    }
+  });
+    });
+  </script>
   <script src="./js/main.js"></script>
 </body>
 
