@@ -27,7 +27,11 @@
   <title>Launchly – Startup HTML Template</title>
   <!-- AOS CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
+  <!-- font awesome -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.png">
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
@@ -85,12 +89,12 @@
         <h2 class="section-title">Our clients</h2>
         <p class="clients-title">Trusted by top companies</p>
         <div class="clients-logos">
-          <img src="./img/logo1.svg" loading="lazy" alt="Client 1">
-          <img src="./img/logo2.svg" loading="lazy" alt="Client 2">
-          <img src="./img/logo3.svg" loading="lazy" alt="Client 3">
-          <img src="./img/logo4.svg" loading="lazy" alt="Client 4">
-          <img src="./img/logo5.svg" loading="lazy" alt="Client 5">
-          <img src="./img/logo6.svg" loading="lazy" alt="Client 6">
+          <img src="./img/client-1.svg" loading="lazy" alt="Client 1">
+          <img src="./img/client-2.svg" loading="lazy" alt="Client 2">
+          <img src="./img/client-3.svg" loading="lazy" alt="Client 3">
+          <img src="./img/client-4.svg" loading="lazy" alt="Client 4">
+          <img src="./img/client-5.svg" loading="lazy" alt="Client 5">
+          <img src="./img/client-6.svg" loading="lazy" alt="Client 6">
         </div>
       </div>
     </section>
@@ -102,13 +106,15 @@
         <p class="section-subtitle">
           Everything you need to launch and grow your business
         </p>
-
+        <!-- Background shape here -->
+        <div class="features-bg-shape to-right"></div>
+        <div class="features-bg-shape to-left"></div>
         <div class="features-grid">
           <div class="feature-box">
             <div class="icon bounce">
               <img src="./img/icon-speed.svg" loading="lazy" alt="Fast Performance">
             </div>
-            <h3>Fast Performance</h3>
+            <h3><span class="feature-index">01.</span> Fast Performance</h3>
             <p>
               Optimized for speed to deliver a lightning-fast user experience.
             </p>
@@ -117,7 +123,7 @@
             <div class="icon bounce">
               <img src="./img/icon-customize.svg" loading="lazy" alt="Easy Customization">
             </div>
-            <h3>Easy Customization</h3>
+            <h3><span class="feature-index">02.</span> Easy Customization</h3>
             <p>
               Edit and deploy your website without touching a single line of
               code.
@@ -127,7 +133,7 @@
             <div class="icon bounce">
               <img src="./img/icon-responsive.svg" loading="lazy" alt="Fully Responsive">
             </div>
-            <h3>Fully Responsive</h3>
+            <h3><span class="feature-index">03.</span> Fully Responsive</h3>
             <p>
               Your site looks great on desktops, tablets, and mobile devices.
             </p>
@@ -136,7 +142,7 @@
             <div class="icon bounce">
               <img src="./img/icon-secure.svg" loading="lazy" alt="Secure by Design">
             </div>
-            <h3>Secure by Design</h3>
+            <h3><span class="feature-index">04.</span> Secure by Design</h3>
             <p>
               Built with best practices to ensure maximum security and
               privacy.
@@ -144,16 +150,16 @@
           </div>
           <div class="feature-box">
             <div class="icon bounce">
-              <img src="./img/seo-icon.svg" loading="lazy" alt="SEO Optimized Icon" />
+              <img src="./img/seo-icon.svg" loading="lazy" alt="SEO Optimized Icon">
             </div>
-            <h3>SEO Optimized</h3>
+            <h3><span class="feature-index">05.</span> SEO Optimized</h3>
             <p>Structured and clean code that helps you rank higher on search engines effortlessly.</p>
           </div>
           <div class="feature-box">
             <div class="icon bounce">
-              <img src="./img/upload-icon.svg" loading="lazy" alt="Free Updates Icon" />
+              <img src="./img/upload-icon.svg" loading="lazy" alt="Free Updates Icon">
             </div>
-            <h3>Free Updates</h3>
+            <h3><span class="feature-index">06.</span> Free Updates</h3>
             <p>Get future improvements and features at no extra cost—ensuring your site stays modern.</p>
           </div>
         </div>
@@ -218,12 +224,12 @@
             <img src="img/post-1.png" loading="lazy" alt="Post 1">
             <div class="blog-meta">
               <span class="author">By Sarah</span> •
-              <span class="date">Apr 24, 2025</span> •
+              <time datetime="2025-04-24" class="date">Apr 24, 2025</time> •
               <span class="tag">Launch</span>
             </div>
             <h3>How to Launch a Product People Love</h3>
             <p>Learn the fundamentals of successful launches with actionable tips and real examples.</p>
-            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="read-more">Read More →</a>
           </article>
 
           <!-- Post 2 -->
@@ -231,12 +237,12 @@
             <img src="img/post-2.png" loading="lazy" alt="Post 2">
             <div class="blog-meta">
               <span class="author">By Liam</span> •
-              <span class="date">Apr 19, 2025</span> •
+              <time datetime="2025-04-19" class="date">Apr 19, 2025</time> •
               <span class="tag">Design</span>
             </div>
             <h3>Design Trends for 2025</h3>
             <p>Stay ahead of the curve with the latest UI/UX trends shaping the future of web design.</p>
-            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="read-more">Read More →</a>
           </article>
 
           <!-- Post 3 -->
@@ -244,12 +250,12 @@
             <img src="img/post-3.png" loading="lazy" alt="Post 3">
             <div class="blog-meta">
               <span class="author">By Alex</span> •
-              <span class="date">Apr 11, 2025</span> •
+              <time datetime="2025-04-11" class="date">Apr 11, 2025</time> •
               <span class="tag">Marketing</span>
             </div>
             <h3>Boost Conversions with Smart CTAs</h3>
             <p>Discover how strategic calls-to-action can dramatically increase user engagement.</p>
-            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="read-more">Read More →</a>
           </article>
 
           <!-- Post 4 -->
@@ -257,12 +263,12 @@
             <img src="img/post-4.png" loading="lazy" alt="Post 4">
             <div class="blog-meta">
               <span class="author">By Emma</span> •
-              <span class="date">Apr 6, 2025</span> •
+              <time datetime="2025-04-06" class="date">Apr 6, 2025</time> •
               <span class="tag">Business</span>
             </div>
             <h3>Secrets to Scaling Your Online Brand</h3>
             <p>Explore proven techniques to take your online presence to the next level.</p>
-            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="read-more">Read More →</a>
           </article>
 
           <!-- Post 5 -->
@@ -270,12 +276,12 @@
             <img src="img/post-5.png" loading="lazy" alt="Post 5">
             <div class="blog-meta">
               <span class="author">By David</span> •
-              <span class="date">Mar 30, 2025</span> •
+              <time datetime="2025-03-30" class="date">Mar 30, 2025</time> •
               <span class="tag">Tools</span>
             </div>
             <h3>Top Tools Every Startup Needs</h3>
             <p>A curated list of powerful tools to help startups stay productive and lean.</p>
-            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="read-more">Read More →</a>
           </article>
 
           <!-- Post 6 -->
@@ -283,12 +289,12 @@
             <img src="img/post-6.png" loading="lazy" alt="Post 6">
             <div class="blog-meta">
               <span class="author">By Olivia</span> •
-              <span class="date">Mar 24, 2025</span> •
+              <time datetime="2025-03-24" class="date">Mar 24, 2025</time> •
               <span class="tag">Tips</span>
             </div>
             <h3>Quick Wins to Improve Website UX</h3>
             <p>Small changes can make a big difference — learn how to improve UX quickly.</p>
-            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="read-more">Read More →</a>
           </article>
         </div>
       </div>
@@ -335,37 +341,34 @@
             </article>
             <article class="swiper-slide testimonial">
               <div class="avatar">
-                <img src="./img/avatar-1.png" loading="lazy" alt="Alex avatar">
+                <img src="./img/avatar-4.png" loading="lazy" alt="Emma avatar">
               </div>
-              <div class="stars">★★★★★</div>
+              <div class="stars">★★★★☆</div>
               <p>
-                “Launchly helped me launch my portfolio in days — it’s fast,
-                clean, and beautifully designed.”
+                “Launchly gave my startup a professional online presence in less than a week. The layout is clean and easy to work with.”
               </p>
-              <h4>— Alex J., Web Developer</h4>
+              <h4>— Emma L., Startup Founder</h4>
             </article>
             <article class="swiper-slide testimonial">
               <div class="avatar">
-                <img src="./img/avatar-2.png" loading="lazy" alt="Maya avatar">
+                <img src="./img/avatar-5.png" loading="lazy" alt="Ryan avatar">
               </div>
               <div class="stars">★★★★★</div>
               <p>
-                “As a freelancer, having a strong online presence is everything.
-                Launchly nails it.”
+                “I’ve tested dozens of templates, but Launchly is by far the easiest and most flexible I’ve used. Beautiful results without coding.”
               </p>
-              <h4>— Maya P., UX Designer</h4>
+              <h4>— Ryan C., Front-End Developer</h4>
             </article>
             <article class="swiper-slide testimonial">
               <div class="avatar">
-                <img src="./img/avatar-3.png" loading="lazy" alt="Thomas avatar">
+                <img src="./img/avatar-6.png" loading="lazy" alt="Sophia avatar">
               </div>
-              <div class="stars">★★★★★</div>
+              <div class="stars">★★★★☆</div>
               <p>
-                “It’s one of the best templates I’ve used. Clear code and great
-                mobile design.”
+                “Love how intuitive everything is. My clients are impressed with the design, and I saved hours on setup.”
               </p>
-              <h4>— Thomas L., Creative Director</h4>
-            </article>
+              <h4>— Sophia D., Freelance Designer</h4>
+            </article>                                    
           </div>
           <!-- Pagination -->
           <div class="swiper-pagination"></div>
@@ -383,9 +386,25 @@
         <div class="contact-wrapper">
           <div class="contact-info">
             <h4>Contact Details</h4>
-            <p><strong>Email:</strong> support@Launchly.com</p>
-            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-            <p><strong>Address:</strong> 123 Boost St, Startup City, NY</p>
+            <div class="info-item">
+              <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+              <div>
+                <strong>Email:</strong> support@Launchly.com
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon"><i class="fa-solid fa-phone"></i></span>
+              <div>
+                <strong>Phone:</strong> +1 (555) 123-4567
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div>
+                <strong>Address:</strong> 123 Boost St, Startup City, NY
+              </div>
+            </div>
+            
           </div>
           <form class="contact-form">
             <input type="text" id="name" placeholder="Your Name" required autocomplete="on">
@@ -489,15 +508,21 @@
         <h4>Subscribe</h4>
         <p>Get product updates, articles, and resources.</p>
         <form>
-          <input type="email" id="news-email" name="news-email" placeholder="Your email" required />
+          <input type="email" id="news-email" name="news-email" placeholder="Your email" required>
           <button type="submit" class="submit">Subscribe</button>
         </form>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; 2025 Launchly. All rights reserved.</p>
-    </div>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy; 2025 Launchly. All rights reserved.</p>
+      </div>
   </footer>
 
 
@@ -513,26 +538,27 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      }
-    }
-  });
+        slidesPerView: 1,
+        spaceBetween: 30,
+        speed: 600,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          }
+        }
+      });
     });
   </script>
   <script src="./js/main.js"></script>
